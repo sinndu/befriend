@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="resources/images/tiledu2.png">
+  <meta name="viewport" content="width=device-width">
+  <title>Befriend! with Sindu, Alex, Sean, & Thomas!</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <audio id="menu-music" controls hidden loop>
+    <source src="/resources/sound/mainmenu.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <audio id="date-music" controls hidden loop>
+    <source src="/resources/sound/datesong1.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <section id="landing-page">
+    <div class="background-tint"></div>
+    <p id="bottomText">Created in 24 hours, third place in YRHACKS</p>
+    <img src="resources/images/true_befriendone1.png" id="titleText" alt="test">
+    <div id="center">
+      <p>with Sindu, Alex, Sean, and Thomas!</p>
+      <button class="button options" onclick="startDate('sindu.json')">Day 1 - Sindu!</button>
+      <button class="button options" onclick="startDate('alex.json')">Day 2 - Alex!</button>
+      <button class="button options" onclick="startDate('sean.json')">Day 3 - Sean!</button>
+      <button class="button options" onclick="startDate('thomas.json')">Day 4 - Thomas!</button>
+    </div>
+  </section>
+  
+  <section id="date" class="hide">
+    <img id="background" src="">
+    <img id="portrait" src="">
+    <canvas id="minigame" class="hide"></canvas>
+    <div class="textBox" id="nameBox" style="--x: 29.75%; --y:60%; --width:10%; --height:2vmin;">
+      <p id="nameParagraph">Name</p>
+    </div>
+    <div class="textBox" id="nameBox" style="--x: 11.5%; --y:60%; --width:20%; --height:2vmin;">
+      <p id="nameParagraph2">Stats</p>
+    </div>
+    <div id="mainTextBox" class="textBox" style="--x: 61.5%; --y:82%; --width:72.5%; --height:26vmin;">
+      <p id="prompt">Prompt text go here</p>
+      <div id="buttons" style="left:50%;">
+        <button id="button1" onclick="proceedText(0)" class="button" style="--width:47.5%; --height:7vmin;">Choice 1</button>
+        <button id="button2" onclick="proceedText(1)" class="button" style="--width:47.5%; --height:7vmin;">Choice 2</button>
+        <button id="button3" onclick="proceedText(2)" class="button" style="--width:47.5%; --height:7vmin;">Choice 3</button>
+        <button id="button4" onclick="proceedText(3)" class="button" style="--width:47.5%; --height:7vmin;">Choice 4</button>
+      </div>
+    </div>
+    <div class="textBox" style="--x: 11.5%; --y:82%; --width:18.75%; --height:26vmin;">
+      <p id="weather" class="stat">Weather: Sunny</p>
+      <p id="love" class="stat">Love: 0</p>
+      <p id="radiation" class="stat">Radiation: 0</p>
+      <p id="IQ" class="stat">IQ: 0</p>
+      <p id="experience" class="stat">Experience: 0</p>
+    </div>
+  </section>
+  <p id="voltext">Volume:</p>
+  <input oninput="changeVolume();" type="range" min="0" max="100" value="20" id="volume" class="slider">
+
+  <script src="date.js"></script>
+  <script src="minigame.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,319 @@
+{
+  "START":{
+    "choices": [["","A"]],
+    "name": "Alex",
+    "backgrounds": ["concert"],
+    "variable":[[]]
+  },
+  "A": {
+    "prompt": "Good morning! I hope you like My Chemical Romance.",
+    "choices": [["'I love My Chemical Romance!'", "AA"],
+                ["'I hate My Chemical Romance.'", "AB"],
+                ["'Who is My Chemical Romance?'", "AC"],
+                ["'What a silly way to start a conversation.'", "AD"]],
+    "emote": "happy",
+    "variable":[[]],
+    "background": 0
+  },
+  "AA": {
+    "prompt": "Yay! Anyways, since you're so cool, here's a riddle: You see a boat filled with people, yet there isn’t a single person on board. How is that possible?",
+    "choices": [["'They're all married! Like we will be soon (PLATONICALLY, WE'RE JUST FRIENDS)'", "AAA"],
+                ["'The people are all mannequins.'", "AAB"],
+                ["'I don't have time for stupid riddles.'", "AAC"]],
+    "emote": "happy",
+    "variable":[["love", 10], ["IQ", 15]],
+    "background": 0
+  },
+  "AB": {
+    "prompt": "WHAT?!??!? Well then, what music DO you like?",
+    "choices": [["'I listen to ABBA.'", "ABA"],
+                ["'I listen to Frank Ocean.'", "ABB"],
+                ["'I listen to whatever Sindu My Beloved tells me to (KANYE WEST).'", "ABC"]],
+    "emote": "angry",
+    "variable":[["love", -5], ["radiation", 100]],
+    "background": 0
+  },
+  "AC": {
+    "prompt": "How did you even get tickets? Hold on, why is your neck so long?",
+    "choices": [["'It's not?'", "ACA"],
+                ["'I'm a goose.'", "AACB"]],
+    "emote": "disgusted",
+    "variable":[["IQ", -10], ["radiation", 3]],
+    "background": 0
+  },
+  "AD": {
+    "prompt": "Well, I'd like to hear what you have to say, since you're so good at talking to people.",
+    "choices": [["'I uhuhuhuh well I uh'", "ADA"],
+                ["'What's your favorite food?'", "ADB"],
+                ["'What's your least favorite animal?'", "ADC"]],
+    "emote": "angry",
+    "variable":[[]],
+    "background": 0
+  },
+  "AAA": {
+    "prompt": "Wow! You got it! You're so smart :)",
+    "choices": [["'Thank you.'", "AAAA"],
+                ["'Yeah, well, you seem like a moron. Like all My Chemical Romance fans.'", "AAAB"]],
+    "emote": "happy",
+    "variable":[["IQ", 10]],
+    "background": 0
+  },
+  "AAB": {
+    "prompt": "Well, I guess that's an answer. Hey, the shows on, but you're just staring at me. Aren't you gonna turn around?",
+    "choices": [["'Yeah sure.'", "AABA"],
+                ["'I- I'm really trying to-'", "AABB"]],
+    "emote": "angry",
+    "variable":[[]],
+    "background": 0
+  },
+  "AAC": {
+    "prompt": "Silly. How did you even get tickets? Hold on, why is your neck so long?",
+    "choices": [["'It's not?'", "AACA"],
+                ["'I'm a goose.'", "AACB"]],
+    "emote": "disgusted",
+    "variable":[[]],
+    "background": 0
+  },
+  "ABA": {
+    "prompt": "I don't really like ABBA... and I don't think this befriendment event is working out. You kinda suck.",
+    "choices": [["'You too, idiot.'", "ABAA"],
+                ["'Okay, bye then.'", "END"]],
+    "emote": "sad",
+    "variable":[[]],
+    "background": 0
+  },
+  "ABB": {
+    "prompt": "Frank Ocean? Uh. Ok. Honestly, I don't really know anything by him.",
+    "choices": [["'We don't seem to have much in common. I think I'm gonna go.'", "END"],
+                ["'Hey, is that Gerard Way waving at you?'", "ABBB"]],
+    "emote": "happy",
+    "variable":[[]],
+    "background": 0
+  },
+  "ABC": {
+    "prompt": "Why would you ever listen to that child of a man?",
+    "choices": [["'What can I say, he's a cool guy!'", "ABCA"],
+                ["'Why would anyone ever listen to YOU?'", "ABCB"]],
+    "emote": "disgusted",
+    "variable":[[]],
+    "background": 0
+  },
+  "ACA": {
+    "prompt": "Oh, yeah sorry. I just have my spaghettification contact lenses in.",
+    "choices": [["'Your WHAT?'", "ACAA"],
+                ["'Oh, I'm Italian!'", "ACAB"]],
+    "emote": "happy",
+    "variable":[[]],
+    "background": 0
+  },
+  "ADA": {
+    "prompt": "You seem a little... confused. I'm not comfortable befriending someone so confused. I'm going home now...",
+    "choices": [["'Bye'", "END"]],
+    "emote": "sad",
+    "variable":[[]],
+    "background": 0
+  },
+  "ADB": {
+    "prompt": "I don't have one, but I really hate eggs.",
+    "choices": [["'Me too!'", "ADBA"],
+                ["(Throw an egg at Alex)", "ADBB"]],
+    "emote": "disgusted",
+    "variable":[[]],
+    "background": 0
+  },
+  "ADC": {
+    "prompt": "I really hate geese. Do you also hate geese?",
+    "choices": [["'I am secretly a goose.'", "ADCA"],
+                ["'Yes! They hiss and whine and poop everywhere.'", "ADCB"]],
+    "emote": "angry",
+    "variable":[[]],
+    "background": 0
+  },
+  "AAAA": {
+    "prompt": "You're so kind and smart! Oh, but the concert is almost over. I've gotta go. See you around!",
+    "choices": [["'Bye!'", "END"]],
+    "emote": "happy",
+    "variable":[[]],
+    "background": 0
+  },
+  "AAAB": {
+    "prompt": "You're not very nice, are you? SCREW YOU, JERK!",
+    "choices": [["'Good riddance, emo kid.'", "END"]],
+    "emote": "angry",
+    "variable":[[]],
+    "background": 0
+  },
+  "AABA": {
+    "prompt": "Um... you aren't turning?",
+    "choices": [["'I really can't... The people who coded this game didn't add that...'", "AABB"]],
+    "emote": "sad",
+    "variable":[["IQ", -10]],
+    "background": 0
+  },
+  "AABB": {
+    "prompt": "Uh, are you okay? Do you need an Advil?",
+    "choices": [["'My neck- won't- move-'", "AABBA"],
+                ["(Make a funny face)", "AABBB"]],
+    "emote": "sad",
+    "variable":[[]],
+    "background": 0
+  },
+  "AACA": {
+    "prompt": "Hey, I don't like liars. I'm going home!",
+    "choices": [["'Bye...'", "END"]],
+    "emote": "happy",
+    "variable":[[]],
+    "background": 0
+  },
+  "AACB": {
+    "prompt": "ASJCHGFBHJNAKDVGHJNSDKGVHJFNSDGMVKFN BFSDNJ FJVMMHISGHNFJHKNJGH CJFHJKTNH<SFHJKVGHCSF",
+    "choices": [["'Uh...'", "END"]],
+    "emote": "angry",
+    "variable":[[]],
+    "background": 0
+  },
+  "ABAA": {
+    "prompt": "You should just go be friends with Thomas. He's also an idiot...",
+    "choices": [["'Ok, I WILL!'", "END"]],
+    "emote": "angry",
+    "variable":[["radiation", 13]],
+    "background": 0
+  },
+  "ABBBA": {
+    "prompt": "I will! I can't wait to [BE FRIENDS] with Gerard Way for the next hour and fifteen minutes!",
+    "choices": [["'Bye, I guess'", "END"]],
+    "emote": "happy",
+    "variable":[[]],
+    "background": 0
+  },
+  "ABBB": {
+    "prompt": "OH MY SEAN! IT IS!",
+    "choices": [["'You should go up on stage with him!'", "ABBBA"]],
+    "emote": "happy",
+    "variable":[[]],
+    "background": 0
+  },
+  "ABCA": {
+    "prompt": "Well, maybe you should just go be friends with him! I hear he really likes dogs.",
+    "choices": [["'Ok, I WILL!'", "END"]],
+    "emote": "angry",
+    "variable":[[]],
+    "background": 0
+  },
+  "ABCB": {
+    "prompt": "You're so rude!",
+    "choices": [["'You too! See ya!'", "END"]],
+    "emote": "angry",
+    "variable":[[]],
+    "background": 0
+  },
+  "ACAA": {
+    "prompt": "They make everything look stretched, like spaghetti!",
+    "choices": [["'You seem like a strange man.'", "ACAAA"],
+                ["'I also like spaghetti!'", "ACAAB"]],
+    "emote": "happy",
+    "variable":[[]],
+    "background": 0
+  },
+  "ACAB": {
+    "prompt": "Oh, that's cool, I guess. Anyways, have you ever thought about how the break in your consciousness when you sleep could be equivalent to the death of that iteration of your self?",
+    "choices": [["'Excuse me, what?'", "ACABA"],
+                ["'Yes, all the time!'", "ACABB"]],
+    "emote": "happy",
+    "variable":[[]],
+    "background": 0
+  },
+  "ADBA": {
+    "prompt": "That's great! I'm allergic to eggs. I think we're a great match for each other (to be BEST friends)!",
+    "choices": [["'Me too! See you another time!'", "END"]],
+    "emote": "happy",
+    "variable":[[]],
+    "background": 0
+  },
+  "ADBB": {
+    "prompt": "WHAT IS WRONG WITH YOU? I'M ALLERGIC TO EGGS!!!",
+    "choices": [["(Hand Alex an EpiPen)", "ADBBA"],
+                ["(Run away)", "END"]],
+    "emote": "disgusted",
+    "variable":[["experience", 3]],
+    "background": 0
+  },
+  "ADCA": {
+    "prompt": "I've had very bad experiences with geese... I'd rather not talk about it. Go back to Texas, you neanderthal!",
+    "choices": [["'Okay I guess... weirdo...'", "END"]],
+    "emote": "disgusted",
+    "variable":[[]],
+    "background": 0
+  },
+  "ADCB": {
+    "prompt": "Exactly! You get me. I think we stand a good chance to be BEST FRIENDS! Don't you think so too?",
+    "choices": [["'Yes, I do! I'll see you another time, Alex!'", "END"]],
+    "emote": "happy",
+    "variable":[[]],
+    "background": 0
+  },
+  "AABBA": {
+    "prompt": "I think we better call off this befriendment event and get you to the hospital!",
+    "choices": [["'AADJHAGDKMVDK'", "END"]],
+    "emote": "sad",
+    "variable":[[]],
+    "background": 0
+  },
+  "AABBB": {
+    "prompt": "OH MY SEAN! IT'S A DEMON! QUICK, WE NEED A PRIEST HERE! HELP!",
+    "choices": [["(Summon Mephistopheles)", "AABBBA"],
+                ["(Return within to the eternal void)", "END"]],
+    "emote": "sad",
+    "variable":[["love", -666], ["radiation", 666]],
+    "background": 0
+  },
+  "ACAAA": {
+    "prompt": "You too! Bye, loser!",
+    "choices": [["'Bye...'", "END"]],
+    "emote": "angry",
+    "variable":[["love", -10]],
+    "background": 0
+  },
+  "ACAAB": {
+    "prompt": "We should be friends!",
+    "choices": [["'Yep :)'   speghet", "END"]],
+    "emote": "happy",
+    "variable":[["love", 10]],
+    "background": 0
+  },
+  "ACABA": {
+    "prompt": "Oh. You wouldn't get it, I guess...",
+    "choices": [["'Bye (?)'", "END"]],
+    "emote": "sad",
+    "variable":[["IQ", -30]],
+    "background": 0
+  },
+  "ACABB": {
+    "prompt": "'That's great! We should be friends!'",
+    "choices": [["'Yep!' also, you, the player, should listen to The Mind Electric by Miracle Musical!", "END"]],
+    "emote": "happy",
+    "variable":[["IQ", 10], ["love", 15]],
+    "background": 0
+  },
+  "ADBBA": {
+    "prompt": "Hey, I feel okay! Thanks for redeeming yourself in the eyes of myself and the Lord!",
+    "choices": [["'No problem!'", "END"]],
+    "emote": "happy",
+    "variable":[["love", 777]],
+    "background": 0
+  },
+  "AABBBA": {
+    "prompt": "OH MAN! IT'S THE DEMON MEPHISTOPHELES! I DON'T WANNA GO TO HELL! SCREW THIS, I'M NOT BEING FRIENDS WITH YOU!",
+    "choices": [["'kjhabfdnkcjhGNAvmjdhjkdnlvMJKH'", "END"]],
+    "emote": "sad",
+    "variable":[["love", -100], ["radiation", 666]],
+    "background": 0
+  },
+  "END": {
+    "prompt": "",
+    "choices": [["''", ""]],
+    "emote": "happy",
+    "variable":[[]],
+    "background": 0
+  }
+}

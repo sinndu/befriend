@@ -1,0 +1,2 @@
+emote list: "happy", "sad", "disgusted", "angry"
+stats: love, IQ, experience, radiation

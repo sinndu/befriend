@@ -1,0 +1,28 @@
+{
+  "START":{
+    "choices": [["","A"]],
+    "name": "test",
+    "backgrounds": ["day","night"],
+    "variable":[[]]
+  },
+  "A": {
+    "prompt": "This is state A. Where do you want to go?",
+    "choices": [["You go to state with key B", "B"],["You go to state with key C", "C"]],
+    "emote": "happy",
+    "variable":[["radiation",-3]],
+    "background": 0
+  },
+  "B": {
+    "prompt": "This is state B. Where do you want to go?",
+    "choices": [["You go to state with key A", "A"],["You go to state with key C", "C"]],
+    "emote": "game",
+    "variable":[["radiation", -2],["love",2]]
+  },
+  "C": {
+    "prompt": "This is state C. Where do you want to go?",
+    "choices": [["You go to state with key A", "A"],["You go to state with key B", "B"],["I am a third choice, which also leads to B", "B"],["Fourth", "D"]], 
+    "emote": "disgusted",
+    "variable":[["radiation", 9],["love", -10]],
+    "background": 1
+  }
+}

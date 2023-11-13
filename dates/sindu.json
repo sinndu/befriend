@@ -1,0 +1,209 @@
+{
+  "START":{
+    "choices": [["","1"]],
+    "name": "Sindu",
+    "backgrounds": ["park"],
+    "variable":[[]]
+  },
+  "1": {
+    "prompt": "Ah you made it!! Welcome to my FAVORITE park 'Rotary Park', isn't it nice?",
+    "choices": [["'It is a really nice park!'", "1A"],
+                ["'Clearly you haven't been to many parks.'", "1B"],
+                ["'I've been to this park before, idiot.'", "1C"]],
+    "emote": "happy",
+    "variable":[[]],
+    "background": 0
+  },
+  "1A": {
+    "prompt": "It is!!!",
+    "choices":[["Continue","2"]],
+    "emote": "happy",
+    "variable":[["love", 5], ["IQ", -1], ["radiation", 0]]
+  },
+  "1B": {
+    "prompt": "Oh, I mean yeah I guess",
+    "choices": [["Continue","2"]],
+    "emote": "sad",
+    "variable":[["love", -5], ["IQ", 0], ["radiation", 2.3]]
+  },
+  "1C":{
+    "prompt": "Oh yeah, that's a good point, you live around here too I guess right?",
+    "choices": [["Continue", "2"]], 
+    "emote": "embarrassed",
+    "variable":[["love", -3], ["IQ", 4], ["radiation", 3.1]]
+  },
+  "2":{
+    "prompt": "Well anyways, what do you -- oh my god!! It's a dog (the dog is beheind you, you cannot see it)!! Don't you love dogs??",
+    "choices": [["'I LOVE dogs!!! If only I could see it.'", "2A"],
+                ["'No actually, I really hate dogs' (you are a monster)", "2B"],
+                ["'My grandmother was mauled by a dog.'", "2C"], 
+                ["(PUNCH THE DOG)", "2D"]],
+    "emote": "shocked",
+    "variable": [[]]
+  },
+  "2A":{
+    "prompt": "I mean you could just turn around. (you can't in the game)",
+    "choices": [["Continue", "3A"]],
+    "emote": "happy",
+    "variable": [["love", 4], ["IQ", 0], ["radiation", -0.1]]
+  },
+  "2B":{
+    "prompt": "Wow, you are a monster (you are a monster)",
+    "choices": [["Continue","3A"]],
+    "emote": "angry",
+    "variable": [["love", -9], ["IQ", -3], ["radiation", 4.5]]
+  },
+  "2C":{
+    "prompt": "What??? Wow I'm so sorry for your loss.",
+    "choices": [["Continue","3A"]],
+    "emote": "shocked",
+    "variable": [["love", 1], ["IQ", 3], ["radiation", 0.5]]
+  },
+  "2D":{
+  "prompt": "(You BRUTALLY beat the dog) What the HELL is wrong with you!??!?!?! Why did you BRUTALLY beat that dog?",
+  "choices": [["Continue","3B"]],
+  "emote": "angry",
+  "variable": [["love", -12], ["IQ", -2], ["radiation", 9.8]]
+  },
+  "3A":{
+    "prompt": "So, who's your favorite musical artist???",
+    "choices": [["'KANYE WEST'", "3AA"],
+                ["'Frank Ocean'", "3AB"],
+                ["'My Chemical Romance'", "3AC"], 
+                ["'I don't listen to music.'", "3AD"]],
+    "emote": "happy",
+    "variable": [[]]
+  },
+  "3AA":{
+    "prompt": "Wow I also love Kanye! (I do not condone any of the past, current, or future words, actions, or statements made by Kanye Omari 'Ye' West)",
+    "choices": [["Continue","3A2"]],
+    "emote": "happy",
+    "variable": [["love", 5], ["IQ", -8], ["radiation", -2]]
+  },
+  "3AB":{
+    "prompt": "Oh, Frank Ocean's really cool! I'm a big fan of his music too.",
+    "choices": [["Continue","3A2"]],
+    "emote": "happy",
+    "variable": [["love", 4], ["IQ", 1], ["radiation", -2.1]]
+  },
+  "3AC":{
+    "prompt": "My Chemical Romance? I know a guy who likes that band. I really hate that guy. Like a lot. Make sure to tell him if you ever see him.",
+    "choices": [["Continue","3A2"]],
+    "emote": "disgusted",
+    "variable": [["love", -1], ["IQ", -12], ["radiation", 4.9]]
+  },
+  "3AD":{
+    "prompt": "What is wrong with you.",
+    "choices": [["Continue","3A2"]],
+    "emote": "shocked",
+    "variable": [["love", -4], ["IQ", -19], ["radiation", -2.6]]
+  },
+  "3A2":{
+    "prompt": "Holy Sean! We're being robbed! There is a man with a gun RIGHT behind you! Turn around! Why aren't you turning around??",
+    "choices": [["Continue","3A3"]],
+    "emote": "shocked",
+    "variable": [[]]
+  },
+  "3A3":{
+    "prompt": "Don't worry, I'll protect you!",
+    "choices": [["Continue","3A4"]],
+    "emote": "happy",
+    "variable": [[]]
+  },
+  "3A4":{
+    "prompt": "BANG BANG BANG PUNCH PUNCH (I AM FIGHTING A MUGGER, YOU JUST CAN'T SEE IT DON'T WORRY)",
+    "choices": [["Continue","3A5"]],
+    "emote": "none",
+    "variable": [[]]
+  },
+  "3A5":{
+    "prompt": "Alright. I've fought the robber off, it was quite an incredible battle, I'm sure you saw it provided you turned around.",
+    "choices": [["'I didn't turn around so I didn't see it.'", "3A5A"],
+                ["'Yeah, it was a crazy fight! Good job'", "3A5B"],
+                ["'I could've done better.'", "3A5C"], 
+                ["'I wanted to be mugged'", "3A5D"]],
+    "emote": "happy",
+    "variable": [[]]
+  },
+  "3A5A":{
+    "prompt": "Oh, well don't worry about that. Just know it was a very impressive fight, I am very strong.",
+    "choices": [["Continue","3A6A"]],
+    "emote": "happy",
+    "variable": [["love", 0], ["IQ", 0], ["radiation", 3]]
+  },
+  "3A5B":{
+    "prompt": "THANK YOU!!!!!!",
+    "choices": [["Continue","3A6A"]],
+    "emote": "happy",
+    "variable": [["love", 21], ["IQ", 6], ["radiation", -5.2]]
+  },
+  "3A5C":{
+    "prompt": "Wow, don't you appreciate my valiant effort to save your life?",
+    "choices": [["Continue","3A6B"]],
+    "emote": "sad",
+    "variable": [["love", -13], ["IQ", 0], ["radiation", 12.2]]
+  },
+  "3A5D":{
+    "prompt": "What, what do you mean by that? Are you making a joke right now? I literally almost died, RIGHT NOW. What a traumatic experience for me, and you're making a JOKE out of it.",
+    "choices": [["Continue","3A6B"]],
+    "emote": "angry",
+    "variable": [["love", -22], ["IQ", -26], ["radiation", 24.3]]
+  },
+  "3A6A":{
+    "prompt": "Sorry to call our date short, but I think I'm suffering from severe blood loss. I should probably get checked into a hospital. Like right now. I'll see you around though!",
+    "choices": [["Continue","3A7"]],
+    "emote": "happy",
+    "variable": [[]]
+  },
+  "3A6B":{
+    "prompt": "You know what, screw you. I don't wanna go on this befriendment event with you ANYWAYS. See you in hell.",
+    "choices": [["Continue","END"]],
+    "emote": "angry",
+    "variable": [["love", 142], ["IQ", 0], ["radiation", 90.8]]
+  },
+  "3A7":{
+    "prompt": "Bye!",
+    "choices": [["Continue","END"]],
+    "emote": "happy",
+    "variable": [[]]
+  },
+  "3B":{
+    "prompt": "Why do you keep punching it? Please, God, stop. It hasn't done anything wrong. Please",
+    "choices": [["Continue","3B2"]],
+    "emote": "disgusted",
+    "variable": [["love", -23], ["IQ", 8], ["radiation", 12.2]]
+  },
+  "3B2":{
+    "prompt": "Please.",
+    "choices": [["Stop punching the dog","3B2A"], ["Start kicking", "3B2B"]],
+    "emote": "sad",
+    "variable": [["love", -31], ["IQ", -6], ["radiation", 56.3]]
+  },
+  "3B2A":{
+    "prompt": "Thank god. I- I can't do this anymore. I need to go. Please never talk to me again.",
+    "choices": [["'Okay loser.'","END"]],
+    "emote": "disgusted",
+    "variable": [["love", -17], ["IQ", 13], ["radiation", 22.1]]
+  },
+  "3B2B":{
+    "prompt": "Oh thank- WHY ARE YOU KICKING IT??!.",
+    "choices": [["(Keep going!)","3B2B2"]],
+    "emote": "shocked",
+    "variable": [["love", -144], ["IQ", -9], ["radiation", 67.7]]
+  },
+  "3B2B2":{
+    "prompt": "God save us. (crying)",
+    "choices": [["(Kill the dog)","3B2B3"]],
+    "emote": "sad",
+    "variable": [["love", -98], ["IQ", 3], ["radiation", 32.1]]
+  },
+  "3B2B3":{
+    "prompt": "I'm calling the police. Never talk to me again. You are the scum of the earth.",
+    "choices": [["Continue","END"]],
+    "emote": "angry",
+    "variable": [["experience", 5],["love", -434], ["IQ", 2], ["radiation", 167.4]]
+  },
+  "END":{
+    "variable": [[]]
+  }
+}

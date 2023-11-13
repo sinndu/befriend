@@ -1,0 +1,72 @@
+{
+  "START":{
+    "choices": [["","A"]],
+    "name": "Sean",
+    "backgrounds": ["Highrise_city"],
+    "variable":[[]]
+  },
+  "A": {
+    "prompt": "Hello there! Nice place to meet, huh?",
+    "choices": [["'Yep.'", "AA"],
+                ["'I completely agree.'", "AA"],
+                ["'It's like we're on the same wavelength!'", "AA"],
+                ["'Why is the only option yes?'", "AB"]],
+    "emote": "happy",
+    "variable":[[]],
+    "background": 0
+  },
+  "AA": {
+    "prompt": "Giant office buildings, high rise apartments... even the stars are showing. Thank god we solved global warming by eliminating all pollution last year, huh?",
+    "choices": [["'Yeah I hate pollution!'", "AAA"],
+                ["'Wait a second, thats a lie!'", "AAA"]],
+    "emote": "happy",
+    "variable":[["love", 5]],
+    "background": 0
+  },
+  "AB": {
+    "prompt": "Ha ha. This is my fourth wall break option. Honestly, we just didn't have much time left and I had to write something so uh, here we are.",
+    "choices": [["'Oh, that's cool I guess. Let's keep breaking the 4th wall'", "AA"],
+                ["'Uummm, can you just, I dunno, be normal?'", "AA"]],
+    "emote": "happy",
+    "variable":[["love", 5]],
+    "background": 0
+  },
+  "AAA": {
+    "prompt": "Know what's worse than pollution though? Time. And we're quickly running out here.",
+    "choices": [["'Okay, well, it was nice meeting you. Bye, I guess.'", "END"],
+                ["'You suck compared to the rest!'", "AAAB"]],
+    "emote": "happy",
+    "variable":[["love", 5]],
+    "background": 0
+  },
+  "AAAB": {
+    "prompt": "Know what's worse than pollution though? Time. And we're quickly running out here.",
+    "choices": [["'Okay, well, it was nice meeting you. Bye, I guess.'", "END"],
+                ["'You suck compared to the rest!'", "AAAB"],
+                ["'Wait, is this a new option?'", "AAALEX"]],
+    "emote": "angry",
+    "variable":[["love", -5], ["radiation", 150], ["IQ", -25]],
+    "background": 0
+  },
+  "AAALEX": {
+    "prompt": "Yeah, this is Alex editing the game the day after we submitted it. Sucks that Sean didn't have a completed campaign, huh?",
+    "choices": [["'I know right? I'm just gonna go talk to Thomas now, since he got added recently!'", "AASEAN"]],
+    "emote": "sad",
+    "variable":[["love", 100], ["radiation", 100], ["iq", 100]],
+    "background": 0
+  },
+  "AASEAN": {
+    "prompt": "Screw you Alex, this is my story now. Also bye.",
+    "choices": [["'...3'", "END"]],
+    "emote": "sad",
+    "variable":[["love", 100], ["radiation", 100], ["iq", 100]],
+    "background": 0
+  },
+  "END": {
+    "prompt": "",
+    "choices": [["''", ""]],
+    "emote": "happy",
+    "variable":[[]],
+    "background": 0
+  }
+}

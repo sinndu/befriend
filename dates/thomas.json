@@ -1,0 +1,221 @@
+{
+  "START":{
+    "choices": [["","0"]],
+    "name": "Thomas",
+    "backgrounds": ["school"],
+    "variable":[[]]
+  },
+  "0": {
+    "prompt": "(It’s another day at school. The school day seems to be even more boring than usual, especially when compared to the crazy befriendment events you’ve been to recently. As you ponder this, a voice from behind you snaps you out of your thoughts...)",
+    "choices": [["Continue", "1"]],
+    "emote": "none",
+    "variable":[[]],
+    "background": 0
+  },
+  "1": {
+    "prompt": "Hey, excuse me! (You turn your head to face whoever just called out to you)",
+    "choices":[["Who could it be?","1.1"]],
+    "emote": "none",
+    "variable":[[]],
+    "background": 0
+  },
+  "1.1": {
+    "prompt": "(Standing before you is a boy, slightly short in height, but with impeccable hair and a smile that more than makes up for it. He extends his arm towards you. He has a pencil in his hand and is holding it out to you)",
+    "choices": [["Continue","1.2"]],
+    "emote": "happy",
+    "variable":[[]],
+    "background": 0
+  },
+  "1.2":{
+    "prompt": "I think you dropped this.",
+    "choices": [["'Oh, thank you...' (Take the pencil and smile shyly)", "1A"], 
+                ["(Nod your head and take the pencil)", "1B"],
+                ["'That’s not my pencil, moron.'", "1C"],
+                ["(Stare awkwardly)", "1D"]],
+    "emote": "happy",
+    "variable":[[]],
+    "background": 0
+  },
+  "1A":{
+    "prompt": "No problem!",
+    "choices": [["(Keep smiling)", "2"]],
+    "emote": "happy",
+    "variable": [["love", 10]],
+    "background": 0
+  },
+  "1B":{
+    "prompt": "What, not even a thank you?",
+    "choices": [["'Oh, yeah thanks.'", "2"]],
+    "emote": "happy",
+    "variable": [["love", -4], ["radiation", 1]],
+    "background": 0
+  },
+  "1C":{
+    "prompt": "A little harsh but alright. Guess a random pencil just fell out of your bag then. Oh well. (He tosses the pencil aside)",
+    "choices": [["'Mhm'","2"]],
+    "emote": "confused",
+    "variable": [["love", -10], ["IQ", -3], ["radiation", 5]],
+    "background": 0
+  },
+  "1D":{
+    "prompt": "Uh... are you gonna take it or...",
+    "choices": [["'OH right sorry!' (Awkwardly take the pencil)","2"]],
+    "emote": "confused",
+    "variable": [["love", 5], ["IQ", -3], ["radiation", 0.5]],
+    "background": 0
+  },
+  "2":{
+    "prompt": "Anyways, my name is Thomas! It’s nice to meet you!",
+    "choices": [["'It’s nice to meet you too!'","2A"],
+                ["'Not sure school is the best place to introduce yourself.'", "2B"],
+                ["'Your voice is annoying.'","2C"],
+                ["'I know :)'","2D"]],
+    "emote": "happy",
+    "variable": [[]],
+    "background": 0
+  },
+  "2A":{
+    "prompt": "You’re on your way to class right? Mind if I walk with you?",
+    "choices": [["'Not at all!'","3"]],
+    "emote": "happy",
+    "variable": [["love", 20],["radiation", -0.5]],
+    "background": 0
+  },
+  "2B":{
+    "prompt": "Yeah well I guess that’s fair.",
+    "choices": [["'Mhm'","3"]],
+    "emote": "sad",
+    "variable": [["love", -10], ["IQ", -8], ["radiation", 2]],
+    "background": 0
+  },
+  "2C":{
+    "prompt": "EXCUSE ME? IT IS NOT! I’LL HAVE YOU KNOW I’M THE HEAD OF ANNOUNCEMENTS AT OUR FINE SCHOOL! THEY CHOSE ME BECAUSE OF MY AMAZING VOICE!",
+    "choices": [["'Clearly they have bad taste.'","6"]],
+    "emote": "angry",
+    "variable": [["love", -30], ["IQ", 1], ["radiation", 10]],
+    "background": 0
+  },
+  "2D":{
+    "prompt": "Uh... what? But I haven’t met you before... how?",
+    "choices": [["'I know everything about you, Thomas.'","7"],
+                ["'My friend told me about you!'","2.5"]],
+    "emote": "confused",
+    "variable": [["love", -5], ["IQ", -2], ["radiation", 1]],
+    "background": 0
+  },
+  "2.5":{
+    "prompt": "Oh! That explains it! Well, any friend of a friend is a friend of a friend and a friend of mine!",
+    "choices": [["'Yay!'","3"]],
+    "emote": "happy",
+    "variable": [["love", 10], ["radiation", -1]],
+    "background": 0
+  },
+  "3":{
+    "prompt": "So, what class do you have?",
+    "choices": [["'Chemistry.'","3A"],
+                ["'Biology.'","3B"],
+                ["'None of your business.'","3C"]],
+    "emote": "happy",
+    "variable": [[]],
+    "background": 0
+  },
+  "3A":{
+    "prompt": "Oh nice! Chemistry is actually my favourite subject! It’s cool that you’re taking it too.",
+    "choices": [["'I’m starting to feel some *chemistry* between us ;D'","4"]],
+    "emote": "happy",
+    "variable": [["love", 50], ["radiation",-0.5]],
+    "background": 0
+  },
+  "3B":{
+    "prompt": "Oh interesting. Hey actually, I’m going into biology and I heard there’s going to be an exclusive biology convention lectured by world-famous doctor Dr. Gregory House, and I’ve got an extra ticket, do you wanna come? How does that sound?",
+    "choices": [["'It sounds like you’re going to be Bi-yourself.'","5A"],
+                ["'No way! I'd love to go!'","4.5"]],
+    "emote": "happy",
+    "variable": [["love", 5]],
+    "background": 0
+  },
+  "3C":{
+    "prompt": "Fair enough",
+    "choices": [["Continue","5B"]],
+    "emote": "sad",
+    "variable": [[]],
+    "background": 0
+  },
+  "4":{
+    "prompt": "Honestly, me too. I’m getting a very friendly vibe from you. You seem like someone I’d like to Befriend. Would you like to hang out together sometime? Maybe see if this chemistry can produce a (platonic) reaction?",
+    "choices": [["'I’d love to!'", "END"]],
+    "emote": "happy",
+    "variable": [["love", 100]],
+    "background": 0
+  },
+  "4.5":{
+    "prompt": "That's awesome! Well then, I look forward to attending this befriendment event with you. Anyways, I should probably get to class. I'll see you around!",
+    "choices": [["'I can't wait, and see you around too!'", "END"]],
+    "emote": "happy",
+    "variable": [["love", 100]],
+    "background": 0
+  },
+  "5A":{
+    "prompt": "Haha, I respect the joke. Well, thanks for entertaining this conversation anyway. I’ll see you around.",
+    "choices": [["'Yeah, maybe.'","END"]],
+    "emote": "sad",
+    "variable": [["love", 1], ["IQ", 0], ["radiation", 5]],
+    "background": 0
+  },
+  "5B":{
+    "prompt": "Yeah I should probably get to class. See you around.",
+    "choices": [["'Hopefully not.'","END"]],
+    "emote": "sad",
+    "variable": [["love", -30], ["IQ", 6], ["radiation", 10]],
+    "background": 0
+  },
+  "6":{
+    "prompt": "HOW DARE YOU! YOU KNOW WHAT, I’LL SHOW YOU HOW GOOD OF A VOICE I HAVE!",
+    "choices": [["'Uh oh.'","6A"]],
+    "emote": "angry",
+    "variable": [["love", -100], ["IQ", 0], ["radiation", 100]],
+    "background": 0
+  },
+  "6A":{
+    "prompt": "(Thomas proceeds to let out an ear piercing, mind numbing screech that is both beautiful and horrific at the same time. The bones in your body collectively shatter like glass at an opera convention. You die)",
+    "choices": [["'Ouch.'","END"]],
+    "emote": "angry",
+    "variable": [["love", -100], ["IQ", -26], ["radiation", 1000], ["experience", -5]],
+    "background": 0
+  },
+  "7":{
+    "prompt": "I'm suddenly getting the vibe that talking to you was a bad idea.",
+    "choices": [["'No, keep talking to me!'","7A"]],
+    "emote": "disgusted",
+    "variable": [["love", 50], ["radiation", 20]],
+    "background": 0
+  },
+  "7A":{
+    "prompt": "Yeah no, I’m good thanks. I’m gonna leave now.",
+    "choices": [["'I know where you live!'","7B"]],
+    "emote": "disgusted",
+    "variable": [["love", -100], ["IQ", 0], ["radiation", 30]],
+    "background": 0
+  },
+  "7B":{
+    "prompt": "What the heck is wrong with you?! I’m calling the police.",
+    "choices": [["'You can't escape me, Thomas.'","7C"]],
+    "emote": "angry",
+    "variable": [[]],
+    "background": 0
+  },
+  "7C":{
+    "prompt": "(Thomas proceeds to call the cops on you. They arrest you, and find you guilty of stalking. You are sentenced to ten years in prison)",
+    "choices": [["'It was worth it.'","END"]],
+    "emote": "angry",
+    "variable": [[]],
+    "background": 0
+  },
+  "END":{
+    "prompt": "",
+    "choices": [["", ""]],
+    "emote": "none",
+    "variable":[[]],
+    "background": 0
+  }
+}
